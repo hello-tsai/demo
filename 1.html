@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        display: block;
+    }
+    
+    .bigbox {
+        width: 300px;
+        border: 5px solid red;
+        margin-top: 200px;
+    }
+    
+    .box1 {
+        width: 100px;
+        height: 100px;
+        float: left;
+        background-color: green
+    }
+    
+    .box2 {
+        width: 100px;
+        height: 100px;
+        float: left;
+        background-color: pink
+    }
+    
+    .box3 {
+        width: 100px;
+        height: 100px;
+        float: left;
+        background-color: orange
+    }
+    
+    .bigbox2 {
+        width: 300px;
+        border: 5px solid red;
+        margin-top: 200px;
+        overflow: hidden;
+    }
+    
+    .bigbox3 {
+        width: 300px;
+        border: 5px solid red;
+        margin-top: 200px;
+        margin-bottom: 600px;
+        float: left;
+    }
+    
+    .clear {
+        clear: both;
+    }
+</style>
+
+<body>
+
+    <div class="bigbox">
+        <div class="box1"> </div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+
+    未形成BFC前，
+
+    <div class="bigbox2">
+        <div class="box1"> </div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    形成BFC例子和2
+    <div class="clear"></div>
+    <div class="bigbox3">
+        <div class="box1"> </div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <div class="clear"></div>
+
+
+</body>
+
+</html>
