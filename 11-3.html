@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .content {
+            width: 900px;
+            border: 2px 0 solid #eee;
+            margin: 0 auto;
+            border-top: 3px solid #eee;
+            border-bottom: 3px solid #eee;
+            padding: 20px 10px;
+        }
+
+        .left {
+            width: 650px;
+            height: 250px;
+
+            float: left;
+        }
+
+        .right {
+            width: 250px;
+            height: 250px;
+
+            float: right;
+            text-align: center;
+
+
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .right img {
+            width: 210px;
+            position: relative;
+            top: 51px;
+        }
+
+        button {
+            position: relative
+            ;
+            bottom:61px;
+            font-size: 16px;
+            width: 60px;
+            height: 30px;
+            background-color: #fff;
+            color: palevioletred;
+            border: 2px solid palevioletred;
+            border-radius: 5px;
+            cursor: pointer;
+
+
+        }
+
+        .photo {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background: url("http://blog.bzxxg.cn/wp-content/uploads/2013/07/guest.png");
+            background-size: 60px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .a {
+            font-size: 24px;
+            color: #b5b5b5;
+            padding: 10px 0;
+
+
+
+        }
+
+        .a p:nth-child(2) {
+            color: black;
+            float: left;
+            margin-right: 10px
+        }
+
+        .a p:nth-child(3) {
+            float: left;
+        }
+        .b{
+            position: relative;
+            bottom:35px;
+        }
+
+        .clear {
+            clear: both;
+        }
+         .c{
+             position: relative;
+             bottom:57px;
+         }
+        .c p:nth-child(1) {
+            float: left;
+        }
+
+        .c p {
+            width: 650px;
+            height: 60px;
+            font-size: 20px;
+            position:relative;
+    line-height:1.5em;
+    /* 高度为需要显示的行数*行高，比如这里我们显示两行，则为3 */
+    height:3em;
+    overflow:hidden;
+        }
+        .c p:after {
+    content:"....";
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding: 0 5px;
+    background-color: #fff;
+}
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="left">
+            <div class="a">
+                <div class="photo"></div>
+                <p>林幕之</p>
+                <p>八小时前</p>
+                <div class="clear"></div>
+            </div>
+            <div class="b">
+                <h1>坚持“读书”的这些年，人生真是太值了！</h1>
+            </div>
+            <div class="c">
+
+                <P>
+                    <span>2017.5.27|NO.18</span>&nbsp&nbsp前几天，在国内大学的朋友给我发来微信。她说：5年前刚进大学的时候，我们是一样的起点，如果我和你当时一样坚持不断的学习，那就好啦呀，现在也不用那么惨了，啊哈哈哈啊哈</P>
+                <div class="clear"></div>
+            </div>
+            <div class="d">
+                <button>读书</button>
+            </div>
+        </div>
+        <div class="right">
+            <img src="http://himg2.huanqiu.com/attachment2010/2017/0906/13/42/20170906014221146.jpg" alt="新垣結衣">
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>
