@@ -1,157 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <style>
-        .container{
-            width:800px;
-            margin:0 auto;
+        .container {
+            width: 800px;
+            margin: 0 auto;
         }
-        header{
-            margin:40px 0px 0px 0px;
+
+        header {
+            margin: 40px 0px 0px 0px;
         }
-    .logo{
-        width: 100px;
-        height:100Px;
+
+        .logo {
+            width: 100px;
+            height: 100Px;
+            border-radius: 50%;
+            margin: 20px;
+            background: black;
+            float: left;
+        }
+
+        .myname {
+            float: left;
+            margin: 10px;
+        }
+
+        .myname>p {
+            font-size: 36px;
+        }
+
+        .myname>p>strong {
+            font-size: 16px;
+
+        }
+
+        .information {
+            float: right;
+        }
+
+        .information>h5 {
+            border-bottom: 3px solid #000;
+        }
+
+        .layot>h3 {
+            width: 400px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .line {
+            position: relative;
+            top: 12px;
+            left: 49px;
+            width: 3px;
+            height: 80px;
+            background-color: #fff;
+            transform: rotate(45deg);
+
+
+        }
+
+        .l-name {
+            font-size: 24px;
+            top: -62px;
+            left: 20px;
+            color: #fff;
+            position: relative;
+
+        }
+
+        .l-name1 {
+            left: 66px;
+        }
+
+        h4>span {
+            color: gray;
+        }
+
+        .w-left {
+            width: 100px;
+            margin: 10px 0;
+            height: 350px;
+            border-left: 1px solid #000;
+            float: left;
+            position: relative;
+        }
+
+        .w-left2 {
+            height: 280px;
+        }
+
+        .spot {
+            position: absolute;
+            left: -10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #000;
+        }
+
+        .spot1 {
+            top: 124px;
+        }
+
+        .spot2 {
+            top: 249px;
+        }
+
+        .spot3 {
+            top: 144px;
+        }
+
+        .activities {
+            width: 400px;
+            float: left;
+        }
+
+        .activities>h3 {
+            width: 350px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .skills>h3 {
+            width: 300px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .skills {
+            width: 400px;
+            float: left;
+        }
+        .icon{
+            position: relative;
+            top:20px;
+            
+            width:30px;
+            height:30px;
+            border: 1px solid #000;
         border-radius: 50%;
-        margin:20px;
-      background: black;
-      float:left;
-    }
-   .myname{
-       float:left;
-       margin:10px;
-   }
-   .myname>p{
-       font-size: 36px;
-   }
-   .myname>p>strong{
-       font-size: 16px;
-       
-   }
-   .information{
-       float: right;
-   }
-   .information>h5{
-      border-bottom: 3px solid #000;
-   }
-   .layot>h3{
-       width:400px;
-       border-bottom: 2px solid #eee;
-   }
-    .clear{
-        clear: both;
-    }
+        }
+        .i-line{
+            position:relative;
+            left:14px;
+            top:5px;
+            width:2px;
+            height:20px;
+            background-color: #000;
+
+        }
+        .i-line1{
+            transform: rotate(90deg);
+           
+            top:-15px;
+        }
+        .icon1{
+            top:93px;
+        }
+
+        .a-left{
+            width:100px;
+            float:left;
+        }
+        .a-right{
+            width:300px;
+            float: left;
+        }
+        .s-block{
+            width:200px;
+            float: left;
+        }
+        .s-block>.icon{
+            float: left;
+        }
+        .s-block>h5{
+            padding:5px 60px;
+        }
     </style>
     <title>resume</title>
 </head>
-<body>
-   <div class="container">
-    <header>
-        <div class="logo">
-            
-        </div>
-        <div class="myname">
-            <p>David Smith <br> <strong>xiaocaitongxue</strong></p>
-            
-           
-            
-        </div>
-        <div class="information">
-            <h5>CONTACTS</h5>
-            <P><b>A</b>&nbsp&nbsp 59 STRERT NY</P>
-            <P><b>M</b>&nbsp 123953943048</P>
-            <P><b>E</b>&nbsp&nbsp STEVE@GMAIL.COM</P>
-            <P><b>B</b>&nbsp&nbsp www.cxt1314.top</P>
 
-        </div>
-       <div class="clear"></div>
-    </header>
-    <content>
-        <div class="layot">
-            <h3>WORK EXPERIENCE</h3>
-            <div class="w-left">
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
                 <div class="line"></div>
-                <span class="spot"></span>
-                <span class="spot"></span>
-                <span class="spot"></span>
+                <div class="l-name">D</div>
+                <div class="l-name l-name1">S</div>
+
             </div>
-            <div class="w-right">
-                <div class="w-block">
-                        <h6>Marketplaces/<span>2012-2013</span></h6>
-                        <p>resume resume resumeresume resume resume
-                        resume resume resumeresume resume resumeresume resume resumeresume
-                         resume resumeresume resume resume
-                         resume resume resume
-                         resume resume resume
-                         resume resume resume
-                        </p>
-                </div>
-                <div class="w-block">
-                        <h6>Apple lnc/<span>2013-2014</span></h6>
-                        <p>resume resume resumeresume resume resume
-                        resume resume resumeresume resume resumeresume resume resumeresume
-                         resume resumeresume resume resume
-                         resume resume resume
-                         resume resume resume
-                         resume resume resume
-                        </p>
-                </div>
-                <div class="w-block">
-                        <h6>Aroma bar network/<span>2014-now</span></h6>
-                        <p>resume resume resumeresume resume resume
-                        resume resume resumeresume resume resumeresume resume resumeresume
-                         resume resumeresume resume resume
-                         resume resume resume
-                         resume resume resume
-                         resume resume resume
-                        </p>
-                </div>
-         
+            <div class="myname">
+                <p>David Smith
+                    <br>
+                    <strong>xiaocaitongxue</strong>
+                </p>
+
+
+
             </div>
-        </div>
-        <div class="layot">
-                <h3>EDUCATION</h3>
+            <div class="information">
+                <h5>CONTACTS</h5>
+                <P>
+                    <b>A</b>&nbsp&nbsp 59 STRERT NY</P>
+                <P>
+                    <b>M</b>&nbsp 123953943048</P>
+                <P>
+                    <b>E</b>&nbsp&nbsp STEVE@GMAIL.COM</P>
+                <P>
+                    <b>B</b>&nbsp&nbsp www.cxt1314.top</P>
+
+            </div>
+            <div class="clear"></div>
+        </header>
+        <content>
+            <div class="layot">
+                <h3>WORK EXPERIENCE</h3>
                 <div class="w-left">
-                    <div class="line2"></div>
+
                     <span class="spot"></span>
-                    <span class="spot"></span>
+                    <span class="spot spot1"></span>
+                    <span class="spot spot2"></span>
                 </div>
                 <div class="w-right">
                     <div class="w-block">
-                            <h6>Marketplaces/<span>2012-2013<br> XXXXXXXX XXXXXX</span></h6>
-                            <p>resume resume resumeresume resume resume
-                            resume resume resumeresume resume resumeresume resume resumeresume
-                             resume resumeresume resume resume
-                             resume resume resume
-                             resume resume resume
-                             resume resume resume
-                            </p>
+                        <h4>Marketplaces/
+                            <span>2012-2013</span>
+                        </h4>
+                        <p>resume resume resumeresume resume resume resume resume resumeresume resume resumeresume resume resumeresume
+                            resume resumeresume resume resume resume resume resume resume resume resume resume resume resume
+                        </p>
                     </div>
                     <div class="w-block">
-                            <h6>Apple lnc/<span>2013-2014<br>XXXXXXX XXXXXX</span></h6>
-                            <p>resume resume resumeresume resume resume
-                            resume resume resumeresume resume resumeresume resume resumeresume
-                             resume resumeresume resume resume
-                             resume resume resume
-                             resume resume resume
-                             resume resume resume
-                            </p>
+                        <h4>Apple lnc/
+                            <span>2013-2014</span>
+                        </h4>
+                        <p>resume resume resumeresume resume resume resume resume resumeresume resume resumeresume resume resumeresume
+                            resume resumeresume resume resume resume resume resume resume resume resume resume resume resume
+                        </p>
                     </div>
-        </div>
-        <div class="layot">
-            <div class="activities">
-                <div class="a-left">
-                <span class="icon"></span>
-                <span class="icon"></span>
+                    <div class="w-block">
+                        <h4>Aroma bar network/
+                            <span>2014-now</span>
+                        </h4>
+                        <p>resume resume resumeresume resume resume resume resume resumeresume resume resumeresume resume resumeresume
+                            resume resumeresume resume resume resume resume resume resume resume resume resume resume resume
+                        </p>
+                    </div>
+
                 </div>
+                <div class="clear"></div>
             </div>
-            <div class="skill"></div>
+            <div class="layot">
+                <h3>EDUCATION</h3>
+                <div class="w-left w-left2 ">
+
+                    <span class="spot"></span>
+                    <span class="spot spot3"></span>
+                </div>
+                <div class="w-right">
+                    <div class="w-block">
+                        <h4>Marketplaces/
+                            <span>2012-2013
+                                <br> XXXXXXXX XXXXXX</span>
+                        </h4>
+                        <p>resume resume resumeresume resume resume resume resume resumeresume resume resumeresume resume resumeresume
+                            resume resumeresume resume resume resume resume resume resume resume resume resume resume resume
+                        </p>
+                    </div>
+                    <div class="w-block">
+                        <h4>Apple lnc/
+                            <span>2013-2014
+                                <br>XXXXXXX XXXXXX</span>
+                        </h4>
+                        <p>resume resume resumeresume resume resume resume resume resumeresume resume resumeresume resume resumeresume
+                            resume resumeresume resume resume resume resume resume resume resume resume resume resume resume
+                        </p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="layot">
+                    <div class="activities">
+                        <h3>EXTRA CURRICULAR ACTIVITIES</h3>
+                        <div class="a-left">
+                         <div class="icon">
+                             <div class="i-line"></div>
+                             <div class="i-line i-line1"></div>
+                         </div>
+                         <div class="icon icon1">
+                                <div class="i-line"></div>
+                                <div class="i-line i-line1"></div>
+                            </div>
+                        </div>
+                        <div class="a-right">
+                            <h4>Resume</h4>
+                            <p> resume resume resume resume resume resume resume </p>
+                            <h4>Resume</h4>
+                            <p> resume resume resume resume resume resume resume </p>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h3>FROFESIONAL SKILLS</h3>
+                        <div class="s-block">
+                            <div class="icon">
+                                    <div class="i-line"></div>
+                                    <div class="i-line i-line1"></div>
+                            </div>
+                            <h5>HTML&CSS</h5>
+                        </div>
+                        <div class="s-block">
+                                <div class="icon">
+                                        <div class="i-line"></div>
+                                        <div class="i-line i-line1"></div>
+                                </div>
+                                <h5>HTML&CSS</h5>
+                            </div>
+                            <div class="s-block">
+                                    <div class="icon">
+                                            <div class="i-line"></div>
+                                            <div class="i-line i-line1"></div>
+                                    </div>
+                                    <h5>HTML&CSS</h5>
+                                </div>
+                                <div class="s-block">
+                                        <div class="icon">
+                                                <div class="i-line"></div>
+                                                <div class="i-line i-line1"></div>
+                                        </div>
+                                        <h5>HTML&CSS</h5>
+                                    </div>
+                                    <div class="s-block">
+                                            <div class="icon">
+                                                    <div class="i-line"></div>
+                                                    <div class="i-line i-line1"></div>
+                                            </div>
+                                            <h5>HTML&CSS</h5>
+                                        </div>
+                                        <div class="s-block">
+                                                <div class="icon">
+                                                        <div class="i-line"></div>
+                                                        <div class="i-line i-line1"></div>
+                                                </div>
+                                                <h5>HTML&CSS</h5>
+                                            </div>
+
+                    </div>
+                </div>
+                <div class="clear"></div>
+        </content>
+        <footer></footer>
         </div>
-    </content> 
-    <footer></footer>
-</div>
 </body>
-</html>
