@@ -285,7 +285,7 @@ section.portfoilo>nav>ol>li:nth-child(1) {
 section.portfoilo>nav>.bar {
     height: 5px;
     background-color: #fff;
-    margin-bottom: 180px;
+    margin-bottom: 20px;
     border-radius: 2px;
 }
 
@@ -309,4 +309,14 @@ section.portfoilo>nav .bar.status-2 .bar-inner {
 section.portfoilo nav .bar.status-3 .bar-inner {
     margin-left: 140px;
     width: 96px;
+}
+
+section.portfolio .works {
+    position: relative;
+    border: 3px solid black;
+}
+
+section.portfolio .works .big,
+section.portfolio .works .small {
+    position: absolute;
 }
