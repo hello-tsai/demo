@@ -80,19 +80,29 @@
             <span class="rs">RS</span><span class="card">card</span>
         </a>
 
-        <nav style="float: right;">
+        <nav class="menu" style="float: right;">
             <ul class="clearfix">
                 <li>
-                    <a href="#">关于</a>
+                    <a href="#siteabout">关于</a>
                 </li>
                 <li>
-                    <a href="#">技能</a>
+                    <a href="#siteskills">技能</a>
                 </li>
                 <li>
-                    <a href="#">作品</a>
+                    <a href="#sitewoeks">作品</a>
+                    <ul class="submenu">
+                        <li>作品1</li>
+                        <li>作品2</li>
+                        <li>作品3</li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="#">博客</a>
+                    <a href="">博客</a>
+                    <ul class="submenu">
+                        <li>作品1</li>
+                        <li>作品2</li>
+                        <li>作品3</li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#">日历</a>
@@ -107,10 +117,10 @@
         </nav>
 
     </div>
-    <div class="banner" style="">
+    <div class="banner">
         <div class="mask"></div>
     </div>
-    <main style="margin-top: -300px;">
+    <main style="margin-top: -300px;" id="siteabout" data-x>
         <div class="usercard">
             <div class="pictureAndText">
                 <div class="picture">
@@ -176,7 +186,7 @@
         </p>
 
     </main>
-    <section class="skills">
+    <section id="siteskills" class="skills" data-x>
         <h2>技能</h2>
         <ol>
             <li>
@@ -220,7 +230,7 @@
         </ol>
 
     </section>
-    <section class="portfoilo">
+    <section class="portfoilo" id="sitewoeks" data-x>
         <h2>作品集</h2>
         <nav>
             <ol>
@@ -258,6 +268,21 @@
         portfolio.className = 'bar status-3'
     }
     sitewelcome.classList.remove('active')
+
+    let liTags = document.querySelectorAll('nav.menu>ul>li')
+    for (let i = 0; i < liTags.length; i++) {
+        liTags[i].onmouseenter = function(x) {
+
+            x.currentTarget.classList.add('active')
+
+        }
+        liTags[i].onmouseleave = function(x) {
+            x.currentTarget.classList.remove('active')
+        }
+    }
+    window.onscroll = function(x) {
+        let speciaTags = document.querySelectorAll('[data-x]')
+    }
 </script>
 
 </html>
