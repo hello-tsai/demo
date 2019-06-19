@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>我的页面</title>
+    <meta view>
+    <style>
+        .a {
+            box-shadow: 2px 2px 3px 5px seagreen
+        }
+    </style>
+
 </head>
+
 <body>
-    测试文件 
-    1
-    2
-    3
-    4
+    <svg height="400px"> 
+    <circle cx="200" cy="200" r="100" fill="green" />
+  </svg>
+    <script>
+        let map = {
+            a: true,
+            b: true
+        }
+        map[2] === true
+        let array = ["a", "b", "a", "c"]
+        let newArray = []
+            // nnewArray = ["a", "b"]
+        console.log(array)
+        for (i = 0; i < array.length; i++) {
+            // map[a] === undefined // true
+            if (map[array[i]] === undefined) {
+                map[array[i]] = true
+                newArray.push(array[i])
+            }
+        }
+        console.log(newArray)
+
+        function unique(arr) {
+            let set = new Set()
+            for (let i = 0; i < arr.length; i++) {
+                set.add(arr[i])
+            }
+            return Array.from(set)
+        }
+        console.log(unique(array))
+    </script>
 </body>
+
 </html>
