@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .container {
+            width: 940px;
+            border: 1px solid #eee;
+        }
+        
+        ul,
+        li {
+            list-style: none;
+        }
+        
+        .sitewindows {
+            width: 940px;
+            height: 400px;
+            overflow: hidden;
+        }
+        
+        .buttons {
+            width: 940px;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid #eee;
+            ;
+        }
+        
+        .btn {
+            width: 60px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fff;
+        }
+        
+        #images {
+            display: flex;
+            transition: all 0.3s;
+        }
+        
+        .active {
+            background-color: rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        .active::before {
+            content: '';
+            position: absolute;
+            border: 5px solid transparent;
+            border-top: 5px solid #fff;
+            top: 0px;
+        }
+    </style>
+    <title>苹果轮播</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sitewindows">
+            <div id="images">
+                <img src="https://demo.tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/img/sample_slides/macbook.jpg" alt="">
+                <img src="https://demo.tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/img/sample_slides/iphone.jpg" alt="">
+                <img src="https://demo.tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/img/sample_slides/imac.jpg" alt="">
+                <img src="https://demo.tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/img/sample_slides/info.jpg" alt="">
+            </div>
+
+        </div>
+        <ul class="buttons">
+            <li id="btn1" class="btn"><img src="https://demo.tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/img/sample_slides/thumb_macbook.png" alt=""></li>
+            <li id="btn2" class="btn"><img src="https://demo.tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/img/sample_slides/thumb_iphone.png" alt=""></li>
+            <li id="btn3" class="btn"><img src="https://demo.tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/img/sample_slides/thumb_imac.png" alt=""></li>
+            <li id="btn4" class="btn"><img src="https://demo.tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/img/sample_slides/thumb_about.png" alt=""></li>
+        </ul>
+
+    </div>
+    <script>
+        $('.btn').on('click', function() {
+            let currentIndex = $(this).index()
+            $('#images').css({
+                    transform: 'translateX(-' + currentIndex * 920 + 'px)'
+                }) //移位
+                //变色
+            $(this).siblings().removeClass('active')
+            $(this).addClass('active')
+
+        })
+    </script>
+</body>
+
+</html>
